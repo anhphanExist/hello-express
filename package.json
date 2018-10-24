@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/spy126/hello-express/issues"
   },
-  "homepage": "https://github.com/spy126/hello-express#readme"
+  "homepage": "https://github.com/spy126/hello-express#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
