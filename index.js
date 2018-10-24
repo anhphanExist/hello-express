@@ -11,6 +11,22 @@ app.get('/get-something', (req, res) => {
 	})
 })
 
+app.get('/html', (req, res) => {
+	res.send(`
+		<html>
+		<head>
+			<title>Hello</title>
+		</head>
+		<body>
+			<p>Hello world</p>
+			<img src="/image.png" />
+		</body>
+		</html>
+   `)
+})
+
+app.use(express.static('public'))
+
 app.listen(3000, () => {
 	console.log('hello')
 })
